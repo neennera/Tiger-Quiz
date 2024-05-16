@@ -1,6 +1,6 @@
 import { useState, SetStateAction } from 'react';
 import { Questions } from '../../assets/Questions';
-
+import Tiger from './Tiger';
 interface Props {
   setResult: React.Dispatch<SetStateAction<string>>;
 }
@@ -42,7 +42,7 @@ const Quiz = (Props: Props) => {
       <h1 className="text-5xl text-black ">Quiz No.{index + 1}</h1>
       <h2>{question.question}</h2>
       <hr />
-      <div className="w-full h-[30vh] sm:w-[95%] space-y-3 flex flex-col">
+      <div className="w-full h-[30vh] sm:w-[95%] space-y-3 flex flex-col ite,s">
         <div className="flex flex-col space-y-4 sm:flex-row justify-between">
           <div
             onClick={(e) => {
@@ -61,6 +61,7 @@ const Quiz = (Props: Props) => {
             <p>{question.answer[1].option}</p>
           </div>
         </div>
+        <Tiger/>
         <div className="flex flex-col space-y-4 sm:flex-row justify-between">
           <div
             onClick={(e) => {
