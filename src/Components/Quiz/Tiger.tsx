@@ -7,13 +7,13 @@ import { RightEye } from './Tiger/RightEye';
 import { TigerFace } from './Tiger/TigerFace';
 
 const Tiger = () => {
-    return(
-        <div className='flex absolute'><TigerFace />
-            <LeftEye />
-            <RightEye />
-            
-        </div>
-    )
-}
+  return (
+    <div className="flex absolute">
+      <TigerFace />
+      <LeftEye />
+      <RightEye />
+    </div>
+  );
+};
 
-export default Tiger
+export default Tiger;

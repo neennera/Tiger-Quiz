@@ -61,7 +61,7 @@ const Quiz = (Props: Props) => {
             <p>{question.answer[1].option}</p>
           </div>
         </div>
-        <Tiger/>
+        <Tiger />
         <div className="flex flex-col space-y-4 sm:flex-row justify-between">
           <div
             onClick={(e) => {

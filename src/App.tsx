@@ -6,7 +6,11 @@ const App = () => {
 
   return (
     <main className="min-h-screen flex flex-col font-serif justify-center items-center space-x-2 space-y-2 bg-primary">
-      {result == '' ? <Quiz setResult={setResult} /> : <Result result={result}/>}
+      {result == '' ? (
+        <Quiz setResult={setResult} />
+      ) : (
+        <Result result={result} />
+      )}
     </main>
   );
 };
