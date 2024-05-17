@@ -35,7 +35,7 @@ const Quiz = (Props: Props) => {
   };
 
   return (
-    <div className="text-lg sm:text-2xl w-[80vw] flex flex-col space-y-6 sm:space-y-10">
+    <div className="text-lg lg:text-2xl w-[80vw] flex flex-col space-y-6 sm:space-y-10">
       <ProgessBar index={index} />
 
       <div className="flex z-0 text-white flex-col space-y-2">
