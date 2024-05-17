@@ -17,7 +17,7 @@ const ProgessBar = (props: Props) => {
 
       <div className="absolute w-[80%] z-0 bg-white h-3"></div>
       <div
-        className="absolute z-0 bg-dark h-3 transition-width duration-500 ease-in-out"
+        className="absolute z-0 bg-whiteDark h-3 transition-width duration-500 ease-in-out"
         style={{ width: `${(props.index * 80) / 3}%` }}
       ></div>
     </div>
