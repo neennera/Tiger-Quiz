@@ -1,12 +1,21 @@
-import Quiz from "./Components/Quiz/Quiz";
+import { useState } from 'react';
+import Quiz from './Components/Quiz/Quiz';
+import Result from './Components/Result/Result';
+import Background from './Components/Quiz/Background';
 
 const App = () => {
-  return(
-    <div className="text-3xl text-slate-500 m-0">
-      HI\as
-      <Quiz />
-    </div>
-  )
-}
+  let [result, setResult] = useState('');
+
+  return (
+    <main className="min-h-screen overflow-hidden flex flex-col font-serif justify-center items-center">
+      <Background />
+      {result == '' ? (
+        <Quiz setResult={setResult} />
+      ) : (
+        <Result result={result} />
+      )}
+    </main>
+  );
+};
 
 export default App;
