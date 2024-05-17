@@ -12,7 +12,7 @@ const ProgessBar = (props: Props) => {
         >
           🐯
         </p>
-        <p className="relative text-3xl left-[93%] t-0">🏃</p>
+        <p className="relative text-3xl left-[80%] sm:left-[93%] t-0">🏃</p>
       </div>
 
       <div className="absolute w-[80%] z-0 bg-white h-3"></div>

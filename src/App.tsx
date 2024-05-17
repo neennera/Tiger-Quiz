@@ -7,12 +7,10 @@ const App = () => {
   let [result, setResult] = useState('');
 
   return (
-    <main className="min-h-screen flex flex-col font-serif justify-center items-center  bg-primary">
+    <main className="min-h-screen flex flex-col font-serif justify-center items-center">
+      <Background />
       {result == '' ? (
-        <>
-          <Background />
-          <Quiz setResult={setResult} />
-        </>
+        <Quiz setResult={setResult} />
       ) : (
         <Result result={result} />
       )}

@@ -35,22 +35,22 @@ const Quiz = (Props: Props) => {
   };
 
   return (
-    <div className="text-2xl w-[80vw] flex flex-col space-y-10">
+    <div className="text-2xl w-[80vw] flex flex-col space-y-6 sm:space-y-10">
       <ProgessBar index={index} />
 
-      <div className="flex flex-col space-y-2">
+      <div className="flex z-0 text-white flex-col space-y-2">
         <h1 className="text-5xl text-black ">Quiz No.{index + 1}</h1>
         <h2>{question.question}</h2>
         <hr />
       </div>
 
-      <div className="w-full h-[40vh] sm:w-[95%] justify-between flex  flex-col  sm:flex-row ite,s">
+      <div className="w-full h-[40vh] sm:w-[95%] justify-between flex space-y-3 flex-col  sm:flex-row">
         <div className="flex flex-col sm:place-content-between space-y-3">
           <div
             onClick={(e) => {
               checkAns(e, 0);
             }}
-            className="backdrop-blur-sm border-4 rounded-xl hover:bg-primaryDark hover:text-white  border-white w-full sm:w-[25vw] min-h-[60px] flex items-center justify-center cursor-pointer"
+            className="backdrop-blur-sm text-white border-4 rounded-xl hover:bg-primaryDark hover:text-white  border-white w-full sm:w-[25vw] min-h-[60px] flex items-center justify-center cursor-pointer"
           >
             <p>{question.answer[0].option}</p>
           </div>
@@ -58,7 +58,7 @@ const Quiz = (Props: Props) => {
             onClick={(e) => {
               checkAns(e, 1);
             }}
-            className="backdrop-blur-sm border-4 cursor-pointer rounded-xl hover:bg-primaryDark hover:text-white  border-white w-full sm:w-[25vw] min-h-[60px] flex items-center justify-center"
+            className="backdrop-blur-sm text-white border-4 cursor-pointer rounded-xl hover:bg-primaryDark hover:text-white  border-white w-full sm:w-[25vw] min-h-[60px] flex items-center justify-center"
           >
             <p>{question.answer[1].option}</p>
           </div>
@@ -69,7 +69,7 @@ const Quiz = (Props: Props) => {
             onClick={(e) => {
               checkAns(e, 2);
             }}
-            className="backdrop-blur-sm border-4 rounded-xl hover:bg-primaryDark cursor-pointer hover:text-white  border-white w-full sm:w-[25vw] min-h-[60px] flex items-center justify-center"
+            className="backdrop-blur-sm border-4 rounded-xl hover:bg-primaryDark cursor-pointer hover:text-white  border-white w-full text-white sm:w-[25vw] min-h-[60px] flex items-center justify-center"
           >
             <p>{question.answer[2].option}</p>
           </div>
@@ -77,7 +77,7 @@ const Quiz = (Props: Props) => {
             onClick={(e) => {
               checkAns(e, 3);
             }}
-            className="backdrop-blur-sm border-4 cursor-pointer rounded-xl hover:bg-primaryDark  hover:text-white  border-white w-full sm:w-[25vw] min-h-[60px] flex items-center justify-center"
+            className="backdrop-blur-sm  text-white border-4 cursor-pointer rounded-xl hover:bg-primaryDark  hover:text-white  border-white w-full sm:w-[25vw] min-h-[60px] flex items-center justify-center"
           >
             <p>{question.answer[3].option}</p>
           </div>

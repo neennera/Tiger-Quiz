@@ -11,33 +11,31 @@
   }
 }
 
-
 @keyframes eyeleft {
   0% {
-    left : 2px;
+    left: -3%;
   }
   100% {
-    left: -20px;
+    left: -35%;
   }
 }
 
 .tigereye-left {
-  animation: eyeleft 2s linear infinite alternate;
+  animation: eyeleft 1s linear infinite alternate;
 }
 
 @keyframes eyeright {
   0% {
-    left : 17px;
+    left: 30%;
   }
   100% {
-    left: 0px;
+    left: 0%;
   }
 }
 
 .tigereye-right {
-  animation: eyeright 2s linear infinite alternate;
+  animation: eyeright 1s linear infinite alternate;
 }
-
 
 .falling-text {
   position: absolute;
