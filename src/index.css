@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes drop {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 92vh;
+  }
+}
+
+.falling-text {
+  position: absolute;
+  animation: drop 5s linear;
+  font-size: 3rem;
+}

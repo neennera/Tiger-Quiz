@@ -4,7 +4,7 @@ interface ResultProps {
 
 const Result = (ResultProps: ResultProps) => {
   return (
-    <div className="flex flex-col space-y-3 items-center justify-center min-h-screen">
+    <div className="absolute flex flex-col space-y-3 items-center justify-center min-h-screen">
       <p className="text-3xl text-black">คุณคือ... {ResultProps.result}</p>
       <div className="flex items-center flex-col sm:flex-row">
         <a href="/">
