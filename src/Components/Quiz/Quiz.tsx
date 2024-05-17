@@ -11,14 +11,14 @@ const Quiz = (Props: Props) => {
   let [huntScore, setHuntScore] = useState(0);
   let [kindScore, setKindScore] = useState(0);
 
-  const checkAns = (e: React.MouseEvent, ans: number) => {
+  const checkAns = (_e: React.MouseEvent, ans: number) => {
     setHuntScore((prev) => prev + question.answer[ans].point[0]);
     setKindScore((prev) => prev + question.answer[ans].point[1]);
     next();
   };
 
   const next = () => {
-    if (index === 2) {
+    if (index === Questions.length - 1) {
       console.log(huntScore, kindScore);
 
       if (huntScore > 2) {
@@ -35,7 +35,7 @@ const Quiz = (Props: Props) => {
   };
 
   return (
-    <div className="text-2xl w-[80vw] flex flex-col space-y-6 sm:space-y-10">
+    <div className="text-lg sm:text-2xl w-[80vw] flex flex-col space-y-6 sm:space-y-10">
       <ProgessBar index={index} />
 
       <div className="flex z-0 text-white flex-col space-y-2">
