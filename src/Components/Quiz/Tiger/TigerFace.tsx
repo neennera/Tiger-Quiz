@@ -1,9 +1,7 @@
 export const TigerFace = () => {
   return (
     <svg
-      className="absolute z-0"
-      width="166px"
-      height="161px"
+      className="absolute z-0 w-[166px] h-[161px] sm:w-[350px] sm:h-[330px]"
       viewBox="0 0 166 161"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

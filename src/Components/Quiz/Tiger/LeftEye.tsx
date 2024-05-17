@@ -1,9 +1,7 @@
 export const LeftEye = () => {
   return (
     <svg
-      className="absolute mt-[65px] ml-[45px]"
-      width="19px"
-      height="19px"
+      className="absolute mt-[65px] ml-[45px] w-[19px] h-[19px] sm:h-[40px] sm:w-[40px] sm:mt-[-20px] sm:ml-[-100px]"
       viewBox="0 0 19 19"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

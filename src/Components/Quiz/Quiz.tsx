@@ -42,8 +42,8 @@ const Quiz = (Props: Props) => {
       <h1 className="text-5xl text-black ">Quiz No.{index + 1}</h1>
       <h2>{question.question}</h2>
       <hr />
-      <div className="w-full h-[30vh] sm:w-[95%] justify-between flex flex-row ite,s">
-        <div className="flex flex-col space-y-4">
+      <div className="w-full h-[40vh] sm:w-[95%] justify-between flex  flex-col  sm:flex-row ite,s">
+        <div className="flex flex-col sm:place-content-between space-y-3">
           <div
             onClick={(e) => {
               checkAns(e, 0);
@@ -62,7 +62,7 @@ const Quiz = (Props: Props) => {
           </div>
         </div>
         <Tiger />
-        <div className="flex flex-col space-y-4">
+        <div className="flex flex-col sm:place-content-between space-y-3">
           <div
             onClick={(e) => {
               checkAns(e, 2);

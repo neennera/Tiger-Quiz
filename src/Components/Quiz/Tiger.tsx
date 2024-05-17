@@ -8,7 +8,7 @@ import { TigerFace } from './Tiger/TigerFace';
 
 const Tiger = () => {
   return (
-    <div className="flex relative m-0 w-[116px] h-[161px]">
+    <div className="sm:flex w-full h-full items-center justify-center block sm:relative">
       <TigerFace />
       <LeftEye />
       <RightEye />
