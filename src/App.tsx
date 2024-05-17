@@ -8,9 +8,11 @@ const App = () => {
 
   return (
     <main className="min-h-screen flex flex-col font-serif justify-center items-center  bg-primary">
-      <Background />
       {result == '' ? (
-        <Quiz setResult={setResult} />
+        <>
+          <Background />
+          <Quiz setResult={setResult} />
+        </>
       ) : (
         <Result result={result} />
       )}

@@ -1,7 +1,7 @@
 export const RightEye = () => {
   return (
     <svg
-      className="absolute mt-[80px] ml-[95px] w-[19px] h-[19px] sm:h-[40px] sm:w-[40px] sm:mt-[35px] sm:ml-[81px]"
+      className="tigereye-right relative"
       viewBox="0 0 19 19"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
