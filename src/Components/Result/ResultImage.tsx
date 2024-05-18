@@ -69,7 +69,7 @@ const ResultImage = (ResultProps: ResultProps) => {
             บันทึกภาพ
           </button>
         </a>
-        <a href="/">
+        <a href="./">
           <button className="h-[9vh] text-xl m-2 p-2 pl-5 pr-5 border-2 border-white hover:bg-white hover:text-primaryDark cursor-pointer rounded-2xl">
             ทำใหม่อีกรอบ
           </button>

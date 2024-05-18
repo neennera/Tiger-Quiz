@@ -29,6 +29,7 @@ const Background = () => {
   }, []);
   return (
     <div id="container" className="absolute m-0 p-0 w-full h-full">
+      <div className=" opacity-20 absolute inset-0 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:25px_25px]"></div>
       <svg
         width="100%"
         height="100%"
