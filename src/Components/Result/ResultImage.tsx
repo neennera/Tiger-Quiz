@@ -2,7 +2,7 @@ import meat from './../../assets/Result/meat.png';
 import hunter from './../../assets/Result/hunter.png';
 import tamer from './../../assets/Result/tamer.png';
 import back from './../../assets/Result/back.png';
-
+import { useLocalStorage } from '../../lib/useLocalStorage';
 interface ResultProps {
   result: string;
 }
@@ -10,6 +10,8 @@ interface ResultProps {
 type ResultType = 'Meat' | 'Hunter' | 'Tamer';
 
 const ResultImage = (ResultProps: ResultProps) => {
+  const { addItems } = useLocalStorage('endingCount');
+  addItems(ResultProps.result);
   const imageMap: Record<ResultType, string> = {
     Meat: meat,
     Hunter: hunter,
