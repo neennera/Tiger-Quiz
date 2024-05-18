@@ -35,11 +35,11 @@ const Quiz = (Props: Props) => {
   };
 
   return (
-    <div className="text-lg sm:text-2xl w-[80vw] flex flex-col space-y-6 sm:space-y-10">
+    <div className="text-lg lg:text-2xl w-[80vw] flex flex-col space-y-6 sm:space-y-10">
       <ProgessBar index={index} />
 
       <div className="flex z-0 text-white flex-col space-y-2">
-        <h1 className="text-5xl text-black ">Quiz No.{index + 1}</h1>
+        <h1 className="text-5xl text-white ">Quiz No.{index + 1}</h1>
         <h2>{question.question}</h2>
         <hr />
       </div>
