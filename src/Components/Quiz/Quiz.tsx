@@ -39,7 +39,7 @@ const Quiz = (Props: Props) => {
       <ProgessBar index={index} />
 
       <div className="flex z-0 text-white flex-col space-y-2">
-        <h1 className="text-5xl text-black ">Quiz No.{index + 1}</h1>
+        <h1 className="text-5xl text-white ">Quiz No.{index + 1}</h1>
         <h2>{question.question}</h2>
         <hr />
       </div>
